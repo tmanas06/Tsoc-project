@@ -1,88 +1,121 @@
 <script>
-    // You can define any dynamic logic or data here
     let message = "Deep Revenue Sharing";
 </script>
 
 <style>
-    /* Add dynamic styles if needed */
+    body {
+        background-color: #ADD8E6; /* Lightish blue background color */
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .top-bar {
+        width: 100%;
+        background-color: #1D4ED8;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
     section {
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 3.5rem); /* Adjust for top bar height */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #ADD8E6; /* Lightish blue background color */
+        padding: 1rem;
+        box-sizing: border-box;
     }
-    .bg-primary-700 {
+    .content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .alert {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        color: #374151;
+        background-color: #F3F4F6;
+        border-radius: 9999px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    .alert:hover {
+        background-color: #E5E7EB;
+    }
+    .alert span:first-child {
         background-color: #1D4ED8;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 9999px;
+        margin-right: 0.5rem;
     }
-    .bg-primary-800 {
-        background-color: #1E40AF;
-    }
-    .bg-gray-700 {
-        background-color: #374151;
-    }
-    .bg-gray-800 {
-        background-color: #1F2937;
-    }
-    .bg-gray-900 {
-        background-color: #111827;
-    }
-    .dark:focus:ring-primary-900:focus:ring-primary-900 {
-        box-shadow: 0 0 0 3px rgba(30, 41, 175, 0.5);
-    }
-    .dark:focus:ring-gray-800:focus:ring-gray-800 {
-        box-shadow: 0 0 0 3px rgba(31, 41, 55, 0.5);
-    }
-    .dark:hover:bg-gray-700:hover:bg-gray-700 {
-        background-color: #374151;
-    }
-    .dark:hover:bg-gray-800:hover:bg-gray-800 {
-        background-color: #1F2937;
-    }
-    .dark:text-white {
-        color: #fff;
-    }
-    .dark:text-gray-400 {
-        color: #D1D5DB;
-    }
-    .dark:text-gray-500 {
-        color: #6B7280;
-    }
-    .dark:text-gray-900 {
+    .heading {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        font-weight: bold;
         color: #111827;
     }
-    .dark:focus:ring-gray-100:focus:ring-gray-100 {
-        box-shadow: 0 0 0 3px rgba(209, 213, 219, 0.5);
+    .sub-heading {
+        font-size: 1.25rem;
+        color: #6B7280;
     }
-    .dark:focus:ring-primary-300:focus:ring-primary-300 {
-        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
-    .dark:hover:bg-gray-100:hover:bg-gray-100 {
-        background-color: #F3F4F6;
+    .card {
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
     }
-    .dark:bg-gray-800 {
-        background-color: #1F2937;
+    .card h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1D4ED8;
     }
-    .dark:bg-gray-900 {
-        background-color: #111827;
-    }
-    .dark:bg-gray-100 {
-        background-color: #F9FAFB;
+    .card p {
+        color: #374151;
     }
 </style>
 
-<section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <a href="" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
-            <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">Welcome to the</span>
-            <span class="text-sm font-medium">{message}</span> 
-            
-        </a>
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"> Your Friendly Sales Tracking application</h1>
-        
-        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                       
+<div class="top-bar">
+    Sales Tracking Dashboard
+</div>
+
+<section>
+    <div class="content">
+        <div class="alert" role="alert">
+            <span>Welcome to the</span>
+            <span>{message}</span>
+        </div>
+        <h1 class="heading">Your Friendly Sales Tracking Application</h1>
+        <p class="sub-heading">Track your sales effortlessly with our intuitive dashboard.</p>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h2>Sales Overview</h2>
+            <p>Track your sales performance with detailed analytics and reports.</p>
+        </div>
+        <div class="card">
+            <h2>Revenue Insights</h2>
+            <p>Gain insights into your revenue streams and optimize your strategy.</p>
+        </div>
+        <div class="card">
+            <h2>Customer Analytics</h2>
+            <p>Understand your customers better with comprehensive analytics.</p>
         </div>
     </div>
 </section>
