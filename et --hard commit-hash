@@ -1,0 +1,105 @@
+[33mcommit 394f675927e042fb92a14730205e2679a52a7f9d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/old-main[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 6c953c3 7236516
+Author: Divyanshu Singh <mr.divyanshu10@gmail.com>
+Date:   Wed Jul 31 15:44:41 2024 +0530
+
+    Merge pull request #1 from Divyanshu-singh15/div
+    
+    done
+
+[33mcommit 7236516dcb267ccd872a9682ee6fd04380fc7b28[m
+Merge: c6fea19 6c953c3
+Author: Divyanshu Singh <mr.divyanshu10@gmail.com>
+Date:   Wed Jul 31 15:44:29 2024 +0530
+
+    Merge branch 'main' into div
+
+[33mcommit c6fea190ac464ed07833363835b6859cc49444b6[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Wed Jul 31 15:36:38 2024 +0530
+
+    done
+
+[33mcommit 6c953c354d124607540fe6c49e00e785c2fc84ba[m
+Author: manas <tmanas2004@gmail.com>
+Date:   Mon Jul 29 23:40:02 2024 +0530
+
+    purchased
+
+[33mcommit 9a826f88f3efa463598762b83285248593e978dd[m
+Author: manas <tmanas2004@gmail.com>
+Date:   Sun Jul 28 21:52:13 2024 +0530
+
+    m
+
+[33mcommit 932a8d33513c357f32b79afd5d2cd20337043e64[m
+Author: manas <tmanas2004@gmail.com>
+Date:   Sun Jul 28 21:06:25 2024 +0530
+
+    homepage
+
+[33mcommit 5c10331289eeed74dc1d33d4ab5eadde8c818946[m
+Author: manas <tmanas2004@gmail.com>
+Date:   Sun Jul 28 20:51:38 2024 +0530
+
+    contact us
+
+[33mcommit 65622debc479c1cb07f003d6a56d7e8e1d4e3a8b[m
+Author: manas <tmanas2004@gmail.com>
+Date:   Sun Jul 28 19:29:01 2024 +0530
+
+    frontend and login->register
+
+[33mcommit 3d001e638b7f9f317d18350dc77156e049215b3c[m[33m ([m[1;31morigin/div[m[33m)[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Sun Jul 28 14:18:12 2024 +0530
+
+    update
+
+[33mcommit 31e91812eedc6ad9b5fb4beaa7d16f44810c32da[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Sun Jul 28 14:13:42 2024 +0530
+
+    everything done except statistics
+
+[33mcommit e1aea6bf26fc8d39b9d4c53dedfcd50e42231d95[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Sun Jul 28 01:46:52 2024 +0530
+
+    added purchase feature
+
+[33mcommit a4a491f2348672896347fd05e522432979471c4f[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Sat Jul 27 17:59:35 2024 +0530
+
+    added purchase frontend
+
+[33mcommit 91e5cd00788eed854aa041b62a63f2885271bf10[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Sat Jul 27 15:55:38 2024 +0530
+
+    final
+
+[33mcommit 90783f07f39510f76ea8dfb0a7c7cb878fe59ec8[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Sat Jul 27 02:59:28 2024 +0530
+
+    logout
+
+[33mcommit 5707830a116391adeded151f843226308e78b703[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Fri Jul 26 12:09:09 2024 +0530
+
+    nn
+
+[33mcommit 0ee7cb99fc1f4ce576178ce62a29521d27ceb544[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Fri Jul 26 00:35:02 2024 +0530
+
+    added login and register func
+
+[33mcommit 7b5a06127309d4aef349d9fd94e141c4b214a42a[m
+Author: mrdiv <mr.divyanshu10@gmail.com>
+Date:   Thu Jul 25 14:53:05 2024 +0530
+
+    first commit

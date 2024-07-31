@@ -1,7 +1,8 @@
-<script lang="ts">
+<script>
   import { onMount } from 'svelte';
 
   let isDarkMode = false;
+  let isAuthenticated = false; // Placeholder for authentication status
 
   onMount(() => {
     isDarkMode = localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme');
@@ -25,24 +26,23 @@
         <li>
           <a href="/" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Home</a>
         </li>
+        {#if !isAuthenticated}
+          <li>
+            <a href="/login" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Login</a>
+          </li>
+          <li>
+            <a href="/register" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Sign up</a>
+          </li>
+        {/if}
+        {#if isAuthenticated}
+          <li>
+            <a href="/dashboard" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Dashboard</a>
+          </li>
+        {/if}
         <li>
-          <a href="/Login" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Login</a>
+          <a href="/contact" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Contact us</a>
         </li>
-        <li>
-          <a href="/Register" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Register</a>
-        </li>
-        <li>
-          <a href="/ProductLaunch" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Product Launch</a>
-        </li>
-        <li>
-          <a href="/Leaderboard" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Leaderboard</a>
-        </li>
-        <li>
-          <a href="/Dashboard" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Dashboard</a>
-        </li>
-        <li>
-          <a href="/Contact" class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:md:hover:text-blue-500 md:p-0">Contact us</a>
-        </li>
+        
       </ul>
     </div>
   </div>
